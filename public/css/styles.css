@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background: url('/images/mike-kenneally-tNALoIZhqVM-unsplash.jpg') no-repeat center center/cover;
+    background: url('../images/mike-kenneally-tNALoIZhqVM-unsplash.jpg') no-repeat center center/cover;
     height: 90vh;
     color: white;
 }
@@ -106,7 +106,7 @@ header p {
     border-top: 2px solid white;
     padding: 20px;
     height: 100%;
-    background: url('/images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg') no-repeat center center/cover;
+    background: url('../images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg') no-repeat center center/cover;
 }
 
 #about h3 {
@@ -161,11 +161,11 @@ blockquote {
 
 /* CAROUSEL ITEMS */
 .g-1 {
-    background: url('/images/shop.jpg') no-repeat center center/cover;
+    background: url('../images/shop.jpg') no-repeat center center/cover;
 }
 
 .g-2 {
-    background: url('/images/art-blur-cappuccino-close-up-302899.jpg') no-repeat center center/cover;
+    background: url('../images/art-blur-cappuccino-close-up-302899.jpg') no-repeat center center/cover;
 }
 
 .g-3 {
@@ -173,7 +173,7 @@ blockquote {
 }
 
 .g-4 {
-    background: url('/images/gray-ceramic-cup-of-coffee-on-round-gray-saucer-908331.jpg') no-repeat center center/cover;
+    background: url('../images/gray-ceramic-cup-of-coffee-on-round-gray-saucer-908331.jpg') no-repeat center center/cover;
 }
 
 /* cell number */
@@ -218,7 +218,7 @@ blockquote {
 
 .parallax {
     /* The image used */
-    background-image: url('/images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg');
+    background-image: url('../images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg');
     /* Set a specific height */
     height: 100%;
     width: 100%;

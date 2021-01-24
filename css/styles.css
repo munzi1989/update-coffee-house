@@ -1,0 +1,486 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --prime-color: slateblue
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: monospace;
+    line-height: 1.2;
+}
+
+header {
+    background: url('/images/mike-kenneally-tNALoIZhqVM-unsplash.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: white;
+}
+
+header p {
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+#showcaseText {
+    position: relative;
+    text-align: center;
+    padding-top: 170px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+#showcaseText p {
+    font-size: 1.2rem;
+}
+
+
+/* NAVBAR */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#navbar {
+    background: black;
+    color: white;
+    overflow: hidden;
+    position: sticky;
+}
+
+#logo img {
+    border-radius: 50%;
+    height: 4em;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 5px;
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#navbar ul li a {
+    margin: 5px;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    border-left: solid 1px var(--prime-color);
+    border-right: 1px solid var(--prime-color);
+    color: var(--prime-color);
+}
+
+
+/* ABOUT */
+#about {
+    border-top: 2px solid white;
+    padding: 20px;
+    height: 100%;
+    background: url('/images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg') no-repeat center center/cover;
+}
+
+#about h3 {
+    padding-bottom: 10px;
+    color: slateblue;
+}
+
+#aboutText {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+
+/* QUOTES */
+aside {
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+
+
+.quote {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+blockquote {
+    color: var(--prime-color);
+}
+
+
+/* CAROUSEL */
+.gallery {
+    background: #EEE;
+    border-bottom: white 3px solid;
+}
+
+.gallery-cell {
+    width: 75%;
+    height: 400px;
+    margin-right: 10px;
+    background: #8C8;
+}
+
+/* CAROUSEL ITEMS */
+.g-1 {
+    background: url('/images/shop.jpg') no-repeat center center/cover;
+}
+
+.g-2 {
+    background: url('/images/art-blur-cappuccino-close-up-302899.jpg') no-repeat center center/cover;
+}
+
+.g-3 {
+    background: url('/images/shop2.jpg') no-repeat center center/cover;
+}
+
+.g-4 {
+    background: url('/images/gray-ceramic-cup-of-coffee-on-round-gray-saucer-908331.jpg') no-repeat center center/cover;
+}
+
+/* cell number */
+.gallery-cell:before {
+    content: '';
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+
+/* MENU */
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 10px;
+    margin: 10px;
+    width: 25vw;
+    min-width: 300px;
+    text-align: center;
+    color: black;
+    padding-bottom: 30px;
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1.rem;
+    border-radius: 10%;
+}
+
+.item img:hover {
+    border: solid 1px var(--prime-color);
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('/images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg');
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* MAP */
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    border: 2px solid black;
+}
+
+#mapText {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid black;
+    color: white;
+    background-color: black;
+}
+
+/* NEWSLETTER */
+
+
+#newsletter {
+    padding-top: 10px;
+    border-top: 3px solid lightgray;
+    margin-top: 60px;
+}
+
+
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.info-box input:focus {
+    outline: none !important;
+    border: var(--prime-color) 2px solid;
+    box-shadow: 0 0 2px #719ECE;
+}
+
+.info-box1,
+.info-box2 {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+
+.info-box label {
+    padding: 10px;
+    color: black;
+}
+
+
+.emailText {
+    color: black;
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+input:hover,
+select:hover {
+    background-color: rgb(237, 236, 236);
+}
+
+input,
+select {
+    border: 1px solid var(--prime-color);
+    width: 75%;
+    padding: 10px;
+}
+
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#wrapper button {
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#wrapper button:hover {
+    transform: scale(1.05);
+    background-color: var(--prime-color);
+}
+
+
+/* FOOTER */
+
+.foot-img {
+    text-align: center;
+    background-color: black;
+}
+
+footer p {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    min-height: 20vh;
+    align-content: center;
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: var(--prime-color);
+}
+
+.social i:hover {
+    transform: scale(1.5);
+    color: var(--prime-color);
+}
+
+/* QUERIES */
+
+@media screen and (max-width: 374px) {
+
+    #logo {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #quote1 {
+        margin-top: 220px;
+    }
+
+    #showcaseText {
+        padding-top: 90px;
+    }
+
+    #showcaseText h1 {
+        font-size: 1.3rem;
+    }
+
+    #showcaseText p {
+        font-size: 1.1rem
+    }
+
+    #about p {
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    #about {
+        height: 450px;
+    }
+
+    #mapText {
+        font-size: .8rem;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+
+    #logo {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #quote1 {
+        margin-top: 30px;
+    }
+
+    #showcaseText {
+        padding-top: 100px;
+    }
+
+    #showcaseText>h1 {
+        font-size: 1.3rem;
+    }
+
+    #showcaseText p {
+        font-size: 1.2rem
+    }
+
+    #about p {
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    #mapText {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #showcaseText {
+        padding-top: 100px;
+    }
+
+    /* half-width cells on carousel for larger devices */
+    .gallery-cell {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #aboutText {
+        font-size: 1.7rem;
+        padding-top: 30px;
+
+    }
+
+    #aboutText::after {
+        padding-top: 10px;
+        content: "\A - Munzi Mocha";
+        white-space: pre;
+    }
+
+    #showcaseText {
+        padding-top: 60px;
+        font-size: 1.1rem;
+    }
+
+}

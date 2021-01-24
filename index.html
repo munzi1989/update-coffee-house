@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ef8bb40a69.js" crossorigin="anonymous"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1NANyTG6ji13K4dvfegS-w23FWwbjuw&callback=initMap"
+        async="" defer="" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="/js/index.js"></script>
+
+
+    <title>Munzi Mocha</title>
+</head>
+
+<body>
+    <!-- MAIN -->
+    <main id="main">
+
+        <!-- HEADER -->
+        <header id="header">
+            <div id="showcaseText">
+                <h1>Munzi Mocha</h1>
+                <p>in all things coffee / coffee in all things</p>
+            </div>
+        </header>
+
+        <!-- NAVBAR -->
+        <nav id="navbar" class="sticky">
+            <a id="logo" href="#"><img src="./images/logo.jpg" alt="Logo"></a>
+            <ul class="clearfix topnav" id="myTopnav">
+
+                <li><a href="#about"><i class="fas fa-book m-1"></i> About</a> </li>
+                <li><a href="#menu"><i class="fas fa-coffee m-1"></i> Menu</a> </li>
+                <li><a href="#map"><i class="fas fa-map"></i> Location</a> </li>
+            </ul>
+        </nav>
+
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div id="aboutText" class="parallax">
+                <h3>Our Story</h3>
+                <p>Coffee has fueled the working world for generations- and it doesn't seem to be slowing down any
+                    time soon. Munzi Mocha
+                    wanted to be a part of that. After many years living on the Big Island and learning about
+                    quality Kona coffee- we made a
+                    plan to bring that full-body flavor to the heart of the USA. Our family takes pride in powering
+                    our local KC community
+                    with positivity and caffeine. Every day.<br><br>
+                    See you soon!
+                </p>
+            </div>
+        </section>
+
+        <!-- QUOTE -->
+        <aside id="quote1">
+            <div class="quote">
+                <h3>I don't need inspirational quotes. I need coffee.</h3>
+                <blockquote><em>-You, probably</em></blockquote>
+            </div>
+        </aside>
+
+        <!-- CAROUSEL -->
+        <section>
+            <!-- using flickity API for carousel -->
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div loading="lazy" class="gallery-cell g-1"></div>
+                <div loading="lazy" class="gallery-cell g-2"></div>
+                <div loading="lazy" class="gallery-cell g-3"></div>
+                <div loading="lazy" class="gallery-cell g-4"></div>
+            </div>
+        </section>
+
+
+        <!-- MENU -->
+        <section id="menu">
+            <!-- parallax class for fixed background on scroll -->
+            <div class="parallax">
+                <ul class="box1 ">
+                    <li class="item">
+                        <p>Delicious Sumatran Beans</p><img loading="lazy" src="/images/box2.jpg "
+                            alt="Delicious Sumatran Beans">
+                        <p>$6.95</p>
+                    </li>
+                    <li class="item">
+                        <p>In-Season Kenyan Beans</p><img loading="lazy" src="/images/photo-of-coffee-warmer-pump-jar-filled-with-coffee-872902.jpg "
+                            alt="In-Season Kenyan Beans">
+                        <p>$6.95</p>
+                    </li>
+                    <li class="item">
+                        <p>Classic Columbian Beans</p><img loading="lazy" src="/images/box3.jpg" alt="Classic Columbian Beans">
+                        <p>$6.95</p>
+                    </li>
+                    <li class="item">
+                        <p>Peruvian Beans</p><img loading="lazy" src="/images/jessica-lewis--54rPId-b9k-unsplash.jpg "
+                            alt="Peruvian Beans">
+                        <p>$6.95</p>
+                    </li>
+                    <li class="item">
+                        <p>Kona Coffee Beans</p><img loading="lazy" src="/images/pexels-livier-garcia-1459339.jpg"
+                            alt="Kona Coffee Beans">
+                        <p>$6.95</p>
+                    </li>
+                    <li class="item">
+                        <p>Congolese Beans</p><img loading="lazy" src="/images/pexels-engin-akyurt-2456429.jpg" alt="golese Beans</p><img loading="lazy" src="/images">
+                        <p>$6.95</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <aside id="quote2">
+            <div class="quote">
+                <h3>Coffee saves lives...</h3>
+                <blockquote><em>-Someone famous, probably</em></blockquote>
+            </div>
+        </aside>
+
+
+        <!-- MAP -->
+        <section>
+            <div id="map"></div>
+            <div id="mapText">
+                <h3>123 N. Rainbow St,<br>
+                    Kansas City, MO, 65113<br>
+                    816-555-1234
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- NEWSLETTER -->
+    <section>
+        <div id="newsletter " class="parallax">
+            <div class="info-box info-box1">
+                <p class="emailText">Like free coffee? Stupid question. Enter your name and email below to sign up for our weekly
+                    newsletter for info on deals, events and a free cup of java!</p>
+            </div>
+            <form action="">
+                <!-- contact -->
+                <div class="info-box info-box1">
+                    <label for="name" required>Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="me@email.com">
+                </div>
+        
+                <!-- gender/age -->
+                <div class="info-box info-box2">
+                    <p class="emailText">If you wouldn't mind, please also fill in your demographic info below in order to help us better serve
+                        our customers</p>
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="female">Rather not say</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+        
+                    <label for="age">Age</label>
+                    <select name="age" id="age">
+                        <option value="N/A">Rather not say</option>
+                        <option value="-21">
+                            21 or less</option>
+                        <option value="22-35">22-35</option>
+                        <option value="35-55">35-55</option>
+                        <option value="55+">55+</option>
+                    </select>
+                </div>
+                <div id="wrapper" class="info-box"><button type="submit">Sign Me Up!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="foot-img">
+            <ul class="social">
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+            <li><i class="fab fa-instagram-square"></i></li>
+        </ul>
+
+        <p>123 N. Rainbow St,<br>
+            Kansas City, MO, 65113<br>
+            816-555-1234<br><br>
+            &copy; Copyright 2021
+        </p>
+        </div>
+        
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
